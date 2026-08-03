@@ -1,27 +1,27 @@
 class TestbotAgent < Formula
   desc "Run Testbots.ai tests locally with Playwright"
   homepage "https://testbots.ai"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     on_arm do
-      url "https://github.com/testbots-ai/testbot-agent-releases/releases/download/v0.1.2/testbot-agent-darwin-arm64.tar.gz"
-      sha256 "ff7b9347aae33999b478dcb764b056507a4e0b8892ae5b5925214611e75effb4"
+      url "https://github.com/testbots-ai/testbot-agent-releases/releases/download/v0.1.3/testbot-agent-darwin-arm64.tar.gz"
+      sha256 "7f1078b027431d64b4178bb71ea41aba62a69ee4327b983c73caba8da4c891a4"
     end
     on_intel do
-      url "https://github.com/testbots-ai/testbot-agent-releases/releases/download/v0.1.2/testbot-agent-darwin-x64.tar.gz"
-      sha256 "b3db5a2ef160e5a603ad5c86f3ed3128469d11f236594dea5bbccdf63c2fe9b4"
+      url "https://github.com/testbots-ai/testbot-agent-releases/releases/download/v0.1.3/testbot-agent-darwin-x64.tar.gz"
+      sha256 "e0c0907e26eaa971b672515bc317b7c97ce6611dd2535bdb228957c5cf015808"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/testbots-ai/testbot-agent-releases/releases/download/v0.1.2/testbot-agent-linux-arm64.tar.gz"
-      sha256 "ed620ac9cf66628c3446f9f495c9ccc5efc0e967c662c1179c3358914f43b751"
+      url "https://github.com/testbots-ai/testbot-agent-releases/releases/download/v0.1.3/testbot-agent-linux-arm64.tar.gz"
+      sha256 "45e7018272ce1e9db8cdb7983a0dfbb921bc0a790663361365633ee7a198610c"
     end
     on_intel do
-      url "https://github.com/testbots-ai/testbot-agent-releases/releases/download/v0.1.2/testbot-agent-linux-x64.tar.gz"
-      sha256 "9280993ca13bef3901de9d8f09b5e4e2fab6260a9bb791fa6efdb44ee406145c"
+      url "https://github.com/testbots-ai/testbot-agent-releases/releases/download/v0.1.3/testbot-agent-linux-x64.tar.gz"
+      sha256 "ac6e2c2a29c9693460f35bb3e144da5c18c2e35187e89357f2462e2991c12fd1"
     end
   end
 
