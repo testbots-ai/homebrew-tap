@@ -25,11 +25,6 @@ class TestbotAgent < Formula
     end
   end
 
-  # The archive ships a folder (wrapper script + a real portable `bun` binary +
-  # our bundled JS + node_modules/playwright*), not a single static binary —
-  # Playwright reads its own files via real filesystem paths at runtime, so it
-  # can't be embedded into one self-contained executable. libexec + a symlink
-  # keeps all of that together while still giving users a normal `bin` command.
   def install
     libexec.install Dir["*"]
     bin.install_symlink "#{libexec}/testbot-agent"
