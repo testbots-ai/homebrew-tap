@@ -1,13 +1,17 @@
-# homebrew-tap
+# homebrew-tap (deprecated)
 
-Homebrew tap for [testbot-agent](https://testbots.ai) — a free-tier local Playwright test runner.
-
-Source code and CI live in a private repository; this tap is kept in sync with each tagged
-release automatically (see `testbot-agent`'s `.github/workflows/release.yml`). Don't hand-edit
-`Formula/testbot-agent.rb` — it will be overwritten on the next release.
-
-## Install
+**This tap is no longer updated.** `testbot-agent` moved to npm distribution — install runs
+directly through your own Node.js. `Formula/testbot-agent.rb` is frozen at its last published
+version and will not receive further updates.
 
 ```sh
-brew install testbots-ai/tap/testbot-agent
+npm install -g testbot-agent
 ```
+
+or
+
+```sh
+npx testbot-agent start
+```
+
+See the [testbot-agent README](https://github.com/testbots-ai/testbot-agent) for usage.
