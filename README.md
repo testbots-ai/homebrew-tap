@@ -1,17 +1,19 @@
-# homebrew-tap (deprecated)
+# homebrew-tap
 
-**This tap is no longer updated.** `testbot-agent` moved to npm distribution — install runs
-directly through your own Node.js. `Formula/testbot-agent.rb` is frozen at its last published
-version and will not receive further updates.
+Homebrew tap for [testbot-agent](https://testbots.ai) — a free-tier local Playwright test runner.
 
+`testbot-agent` is published to npm; this formula installs it via Homebrew's standard npm-based
+Node formula pattern (`depends_on "node"` + `npm install`), kept in sync with each npm release
+automatically (see `testbot-agent`'s `.github/workflows/release.yml`). Don't hand-edit
+`Formula/testbot-agent.rb` — it will be overwritten on the next release.
+
+## Install
+
+```sh
+brew install testbots-ai/tap/testbot-agent
+```
+
+Equivalent to:
 ```sh
 npm install -g testbot-agent
 ```
-
-or
-
-```sh
-npx testbot-agent start
-```
-
-See the [testbot-agent README](https://github.com/testbots-ai/testbot-agent) for usage.
