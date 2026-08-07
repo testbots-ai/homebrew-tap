@@ -1,8 +1,8 @@
 class TestbotAgent < Formula
   desc "Run Testbots.ai tests locally with Playwright"
   homepage "https://testbots.ai"
-  url "https://registry.npmjs.org/testbot-agent/-/testbot-agent-0.1.8.tgz"
-  sha256 "2e8ac5b662b1c53a71f0de72a5c384492b4170db16a085c15c5b4ad00880c2c3"
+  url "https://registry.npmjs.org/testbot-agent/-/testbot-agent-0.3.0.tgz"
+  sha256 "2720ee0acb2bd09d58eeac21f907d4425fcc57a32f3d55bb48557c475fdfc881"
   license :cannot_represent
 
   depends_on "node"
